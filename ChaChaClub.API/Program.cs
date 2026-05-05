@@ -1,3 +1,5 @@
+using AutoMapper;
+using ChaChaClub.BusinessLogic.Mapping;
 using ChaChaClub.DataAccess;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -8,8 +10,15 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 var jwtSecret = builder.Configuration["JwtSecret"];
 
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new MappingProfile());
+});
+IMapper mapper = mapperConfig.CreateMapper();
+
 builder.Services.AddSingleton(new DbSession(connectionString));
-builder.Services.AddSingleton(new ChaChaClub.BusinessLogic.BusinessLogic(new DbSession(connectionString), jwtSecret));
+builder.Services.AddSingleton(new ChaChaClub.BusinessLogic.BusinessLogic(
+    new DbSession(connectionString), jwtSecret, mapper));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
