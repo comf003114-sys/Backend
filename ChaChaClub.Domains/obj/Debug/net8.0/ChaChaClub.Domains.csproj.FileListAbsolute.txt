@@ -1,0 +1,12 @@
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\bin\Debug\net8.0\ChaChaClub.Domains.deps.json
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\bin\Debug\net8.0\ChaChaClub.Domains.dll
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\bin\Debug\net8.0\ChaChaClub.Domains.pdb
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\obj\Debug\net8.0\ChaChaClub.Domains.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\obj\Debug\net8.0\ChaChaClub.Domains.AssemblyInfoInputs.cache
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\obj\Debug\net8.0\ChaChaClub.Domains.AssemblyInfo.cs
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\obj\Debug\net8.0\ChaChaClub.Domains.csproj.CoreCompileInputs.cache
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\obj\Debug\net8.0\ChaChaClub.Domains.sourcelink.json
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\obj\Debug\net8.0\ChaChaClub.Domains.dll
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\obj\Debug\net8.0\refint\ChaChaClub.Domains.dll
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\obj\Debug\net8.0\ChaChaClub.Domains.pdb
+C:\Users\pryma\OneDrive\Рабочий стол\Backend\Backend\ChaChaClub.Domains\obj\Debug\net8.0\ref\ChaChaClub.Domains.dll
