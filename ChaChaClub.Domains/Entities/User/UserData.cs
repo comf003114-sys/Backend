@@ -22,5 +22,8 @@ namespace ChaChaClub.Domains.Entities.User
         public string Password { get; set; }
 
         public bool IsVerified { get; set; } = false;
+
+        [StringLength(20)]
+        public string Role { get; set; } = "User";
     }
 }
