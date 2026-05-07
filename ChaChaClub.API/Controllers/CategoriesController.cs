@@ -1,4 +1,6 @@
+using ChaChaClub.API.Filters;
 using ChaChaClub.Domains.Models.Dish;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChaChaClub.API.Controllers
@@ -43,6 +45,8 @@ namespace ChaChaClub.API.Controllers
         }
 
         [HttpPost]
+        [Authorize]
+        [AdminMod]
         public async Task<IActionResult> Create([FromBody] CreateCategoryDto dto)
         {
             try
@@ -57,6 +61,8 @@ namespace ChaChaClub.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize]
+        [AdminMod]
         public async Task<IActionResult> Update(int id, [FromBody] CreateCategoryDto dto)
         {
             try
@@ -71,6 +77,8 @@ namespace ChaChaClub.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
+        [AdminMod]
         public async Task<IActionResult> Delete(int id)
         {
             try
