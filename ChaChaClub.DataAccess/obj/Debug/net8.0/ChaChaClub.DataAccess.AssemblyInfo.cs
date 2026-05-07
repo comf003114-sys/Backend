@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChaChaClub.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a528e6633a6f0a8c43763ee36ce1dd93e34fce33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7eb654032f16a191c3e59136cab33f8ece3ddb9e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChaChaClub.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChaChaClub.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
