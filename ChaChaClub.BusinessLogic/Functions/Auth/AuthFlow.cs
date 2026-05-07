@@ -23,7 +23,6 @@ namespace ChaChaClub.BusinessLogic.Functions.Auth
             var user = await GetUserByEmail(email);
             if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.Password))
                 throw new Exception("Invalid email or password");
-
             return GenerateToken(user);
         }
 
@@ -52,7 +51,8 @@ namespace ChaChaClub.BusinessLogic.Functions.Auth
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Name, user.Username)
+                new Claim(ClaimTypes.Name, user.Username),
+                new Claim(ClaimTypes.Role, user.Role)
             };
 
             var token = new JwtSecurityToken(
