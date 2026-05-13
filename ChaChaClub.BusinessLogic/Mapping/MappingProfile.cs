@@ -11,6 +11,9 @@ namespace ChaChaClub.BusinessLogic.Mapping
         public MappingProfile()
         {
             CreateMap<ReviewData, CreateReviewDto>().ReverseMap();
+            CreateMap<ReviewData, ReviewDto>()
+                .ForMember(dest => dest.Username, opt => opt.MapFrom(src => src.User.Username))
+                .ReverseMap();
             CreateMap<DishData, DishDto>().ReverseMap();
             CreateMap<DishData, CreateDishDto>().ReverseMap();
             CreateMap<CategoryData, CategoryDto>().ReverseMap();

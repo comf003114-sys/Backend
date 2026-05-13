@@ -2,6 +2,7 @@ using AutoMapper;
 using ChaChaClub.BusinessLogic.Functions.Auth;
 using ChaChaClub.BusinessLogic.Functions.Categories;
 using ChaChaClub.BusinessLogic.Functions.Dishes;
+using ChaChaClub.BusinessLogic.Functions.Reviews;
 using ChaChaClub.BusinessLogic.Interface;
 using ChaChaClub.DataAccess;
 
@@ -23,5 +24,6 @@ namespace ChaChaClub.BusinessLogic
         public IAuth Auth() => new AuthFlow(_session, _jwtSecret);
         public ICategories Categories() => new CategoriesFlow(_session, _mapper);
         public IDishes Dishes() => new DishesFlow(_session, _mapper);
+        public IReviews Reviews() => new ReviewsFlow(_session, _mapper);
     }
 }
