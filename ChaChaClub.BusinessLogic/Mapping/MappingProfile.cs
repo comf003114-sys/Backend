@@ -3,6 +3,8 @@ using ChaChaClub.Domains.Entities.Dish;
 using ChaChaClub.Domains.Entities.Review;
 using ChaChaClub.Domains.Models.Dish;
 using ChaChaClub.Domains.Models.Review;
+using ChaChaClub.Domains.Entities.Wine;
+using ChaChaClub.Domains.Models.Wine;
 
 namespace ChaChaClub.BusinessLogic.Mapping
 {
@@ -18,6 +20,8 @@ namespace ChaChaClub.BusinessLogic.Mapping
             CreateMap<DishData, CreateDishDto>().ReverseMap();
             CreateMap<CategoryData, CategoryDto>().ReverseMap();
             CreateMap<CategoryData, CreateCategoryDto>().ReverseMap();
+            CreateMap<WineData, WineDto>().ReverseMap();
+            CreateMap<WineData, CreateWineDto>().ReverseMap();
         }
     }
 }

@@ -5,6 +5,7 @@ using ChaChaClub.BusinessLogic.Functions.Dishes;
 using ChaChaClub.BusinessLogic.Functions.Reviews;
 using ChaChaClub.BusinessLogic.Interface;
 using ChaChaClub.DataAccess;
+using ChaChaClub.BusinessLogic.Functions.Wines;
 
 namespace ChaChaClub.BusinessLogic
 {
@@ -25,5 +26,6 @@ namespace ChaChaClub.BusinessLogic
         public ICategories Categories() => new CategoriesFlow(_session, _mapper);
         public IDishes Dishes() => new DishesFlow(_session, _mapper);
         public IReviews Reviews() => new ReviewsFlow(_session, _mapper);
+        public IWines Wines() => new WinesFlow(_session, _mapper);
     }
 }

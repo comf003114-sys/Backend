@@ -2,6 +2,7 @@ using ChaChaClub.Domains.Entities.Dish;
 using ChaChaClub.Domains.Entities.Review;
 using ChaChaClub.Domains.Entities.User;
 using Microsoft.EntityFrameworkCore;
+using ChaChaClub.Domains.Entities.Wine;
 
 namespace ChaChaClub.DataAccess.Context
 {
@@ -24,5 +25,6 @@ namespace ChaChaClub.DataAccess.Context
         public DbSet<DishData> Dishes { get; set; }
         public DbSet<IngredientData> Ingredients { get; set; }
         public DbSet<ReviewData> Reviews { get; set; }
+        public DbSet<WineData> Wines { get; set; }
     }
 }
